@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li, ol, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 100vw;
+}
+
+.nav-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.nav-container .logo {
+    width: 50%;
+    margin-top: 2em;
+    padding-left: 2em;
+    position: relative;
+}
+
+.nav-container .logo img {
+    width: 5%;
+}
+
+.nav-container .logo hr {
+    width: 90%;
+    position: absolute;
+    top: 30%;
+    right: -4%;
+    z-index: 4;
+    border: none;
+    border-bottom: 1px solid rgba(141,123,123,.494);
+}
+
+.nav-container .contents {
+    width: 65%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(128,109,109,.254);
+    backdrop-filter: blur(10px);
+}
+
+.nav-container .contents li a {
+    display: block;
+    margin-left: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,.849);
+    border-bottom: 2px solid transparent;
+    font-family: "Barlow Condensed",sans-serif;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.nav-container .contents li a strong {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.body-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+    min-height: 75vh;
+}
+
+.body-container .title-img {
+    width: 50%;
+    justify-content: center;
+    align-items: start;
+    padding: 1em;
+}
+
+.body-container .title-img h1 {
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.8vw;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 0.5em;
+    font-family: "Barlow Condensed",sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.body-container .title-img h1 span {
+    padding-right: 0.5em;
+    color: #705959;
+}
+
+.body-container .title-img img {
+    width: 500px;
+    padding: 2em;
+    animation: rotate 50s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.body-container .slides {
+    width: 40%;
+    padding: 2em;
+    color: #fff;
+    display: inline-block;
+}
+
+.body-container .slides .slider-header {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.body-container .slides .slider-header .tab {
+    display: block;
+    padding: 0.5em;
+    background-color: transparent;
+    border: none;
+    font-family: "Barlow Condensed",sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.849);
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.body-container .slides .slider-header .active {
+    border-bottom: 1px solid #fff;
+}
+
+.body-container .slides .slider {
+    display: block;
+}
+
+.body-container .slides .slider h1 {
+    font-weight: 500;
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-family: "Bellefair",serif;
+    color: #fff;
+    margin: 0;
+}
+
+.body-container .slides .slider p {
+    font-size: 1.1vw;
+    color: rgba(255,255,255,.89);
+    line-height: 2;
+    text-align: justify;
+    font-family: "Barlow",sans-serif;
+    text-transform: inherit;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.body-container .slides .slider hr {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.body-container .slides .slider .slider-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-container .slides .slider .slider-info .info-box {
+    display: block;
+    width: 50%;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+.body-container .slides .slider .slider-info .info-box h2 {
+    font-size: 1.1vw;
+    font-family: "Barlow Condensed",sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.815);
+    padding: 5px;
+}
+
+.body-container .slides .slider .slider-info .info-box span {
+    font-size: 1.7vw;
+    font-family: "Bellefair",sans-serif;
+    text-transform: uppercase;
+}

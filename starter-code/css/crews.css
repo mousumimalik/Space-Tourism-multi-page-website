@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li, ol, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 100vw;
+}
+
+.nav-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.nav-container .logo {
+    width: 50%;
+    margin-top: 2em;
+    padding-left: 2em;
+    position: relative;
+}
+
+.nav-container .logo img {
+    width: 5%;
+}
+
+.nav-container .logo hr {
+    width: 90%;
+    position: absolute;
+    top: 30%;
+    right: -4%;
+    z-index: 4;
+    border: none;
+    border-bottom: 1px solid rgba(141,123,123,.494);
+}
+
+.nav-container .contents {
+    width: 65%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(128,109,109,.254);
+    backdrop-filter: blur(10px);
+}
+
+.nav-container .contents li a {
+    display: block;
+    margin-left: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,.849);
+    border-bottom: 2px solid transparent;
+    font-family: "Barlow Condensed",sans-serif;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.nav-container .contents li a strong {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.body-container {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    min-height: 75vh;
+}
+
+.body-container .name-title {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-container .name-title h1 {
+    margin: 50px 100px 100px -50px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.8vw;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 0.5em;
+    font-family: "Barlow Condensed",sans-serif;
+    
+}
+
+.body-container .name-title h1 span {
+    padding-right: 0.5em;
+    color: #705959;
+}
+
+.body-container .name-title .header-slider h2 {
+    color: #ac8e8e;
+    font-weight: lighter;
+    margin: 30px 0 0 230px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Bellefair",serif;
+}
+
+.body-container .name-title .header-slider h3 {
+    margin: 0 0 0 230px;
+    padding: 0em;
+    font-size: 3.1vw;
+    letter-spacing: 5px;
+    line-height: 2;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Bellefair",serif;
+}
+
+.body-container .name-title .header-slider p {
+    width: 60%;
+    color: rgba(255,255,255,.707);
+    line-height: 2;
+    margin-left: 230px;
+    margin-bottom: 7vw;
+    text-transform: inherit;
+    font-family: "Barlow",sans-serif;
+}
+
+.body-container .name-title .bullets {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+    margin-top: -15px;
+    margin-left: 455px;
+}
+
+.body-container .name-title .bullets .bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 150px;
+    border: none;
+    cursor: pointer;
+    background-color: #a99595;
+    transition: .5s ease;
+}
+
+.body-container .name-title .bullets .bullet.active {
+    transform: scale(1.2);
+    background-color: #fff;
+    border: none !important;
+}
+
+.body-container .img-container {
+    display: inline-block;
+    width:30%;
+    padding: 2em;
+    color: #fff;
+}
+
+.body-container .img-container img {
+    width: 100%;
+    margin-bottom: -39vw;
+    border-bottom: 1px solid gray;
+}
