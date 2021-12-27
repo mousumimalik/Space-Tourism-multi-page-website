@@ -141,7 +141,7 @@ li, ol, a {
     justify-content: flex-start;
 }
 
-.body-container .slides .slider-header .tab {
+.body-container .slides .slider-header .tab a {
     display: block;
     padding: 0.5em;
     background-color: transparent;
