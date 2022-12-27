@@ -19,7 +19,7 @@ li, ol, a {
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
 }
 
 .nav-container {
@@ -59,9 +59,17 @@ li, ol, a {
     backdrop-filter: blur(10px);
 }
 
+.nav-container .contents .active {
+    border-bottom: 3px solid #fff;
+}
+
+.nav-container .contents li {
+    margin-left: 3em;
+}
+
 .nav-container .contents li a {
     display: block;
-    margin-left: 3em;
+    /* margin-left: 3em; */
     padding-top: 2em;
     padding-bottom: 2em;
     font-size: 1vw;
@@ -165,5 +173,179 @@ li, ol, a {
 .body-container .explore .btn:hover {
     transform: scale(1.3);
     box-shadow: 0 0 20px #fff;  
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.close-btn {
+    display: none;
+}
+
+/* .show-links {
+    height: 10rem;
+} */
+
+@media (max-width: 450px) {
+    body {
+        background-image: url(../assets/home/background-home-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .container {
+        width: 100%;
+        height: 900px;
+    }
+
+    .nav-container {
+        width: auto;
+        margin-top: 0;
+    }
+    
+    .nav-container .logo {
+        width: 30%;
+        margin-top: 20px;
+    }
+
+    .nav-container .logo img {
+        width: 15vw;
+    }
+
+    .nav-container .logo hr {
+        display: none;
+    }
+
+    .nav-container .logo .nav-toggle {
+        display: flex;
+        margin-left: 280px;
+        margin-top: -60px;
+        z-index: 5;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 30px;
+    }
+
+    .nav-container .logo .nav-toggle .bars {
+        font-size: 38px;
+        opacity: 0.7;
+    }
+
+    .nav-container .contents {
+        display: none;
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        /* min-height: 100vh; */
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        margin-top: 0;
+        padding: 0;
+        z-index: 5;
+        transition: .3s ease-in-out;
+        backdrop-filter: blur(20px);
+    }
+
+    .nav-container .contents .active {
+        border-bottom: none;
+    }
+
+    .nav-container .contents li {
+        width: 100%;
+        display: block;
+    }
+
+    .nav-container .contents li a {
+        display: inline-block;
+        width: 100%;
+        border-bottom: none !important;
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .nav-container .contents .close-btn {
+        display: block;
+        width: 100%;
+        padding-bottom: 3em;
+        padding-top: 3em;
+        position: relative;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .nav-container .contents .close-btn .fa-times {
+        position: absolute;
+        top: 40%;
+        margin-left: 80px;
+        color: #fff;
+        font-size: 40px;
+    }
+
+
+    .body-container {
+        width: 100%;
+        height: 80%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body-container .text {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .body-container .text h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body-container .text h1 .title {
+        font-size: 25px;
+    }
+
+    .body-container .text h1 .sub-title {
+        font-size: 95px;
+        margin-bottom: 10px;
+    }
+
+    .body-container .text p {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        line-height: 1.6;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .body-container .explore .btn {
+        width: 200px;
+        height: 200px;
+        bottom: -100px;
+        padding: 0;
+        margin-left: 90px;
+    }
+
+    .body-container .explore .btn span {
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
 }
 

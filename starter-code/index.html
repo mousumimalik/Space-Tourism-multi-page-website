@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  
   <link rel="stylesheet" href="./css/home.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -15,9 +17,15 @@
             <div class="logo">
                 <img src="./assets/shared/logo.svg" alt="">
                 <hr>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars bars"></i>
+                </button>
             </div>
             <div class="contents">
-                <li><a href="#"> <strong>00</strong> Home </a></li>
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <li class="active"><a href="#"> <strong>00</strong> Home </a></li>
                 <li><a href="./destination-moon.html"> <strong>01</strong> Destination </a></li>
                 <li><a href="./crew-commander.html"> <strong>02</strong> Crew </a></li>
                 <li><a href="./technology-vehicle.html"> <strong>03</strong> Technology </a></li>
@@ -41,6 +49,9 @@
             </div>
         </div>
     </div>
+
+
+    <script src="./js/home.js"></script>
 
 </body>
 </html>

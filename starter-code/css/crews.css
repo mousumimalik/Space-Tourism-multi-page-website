@@ -59,9 +59,17 @@ li, ol, a {
     backdrop-filter: blur(10px);
 }
 
+.nav-container .contents .active {
+    border-bottom: 3px solid #fff;
+}
+
+.nav-container .contents li {
+    margin-left: 3em;
+}
+
 .nav-container .contents li a {
     display: block;
-    margin-left: 3em;
+    /* margin-left: 3em; */
     padding-top: 2em;
     padding-bottom: 2em;
     font-size: 1vw;

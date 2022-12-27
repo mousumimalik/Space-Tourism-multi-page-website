@@ -59,9 +59,17 @@ li, ol, a {
     backdrop-filter: blur(10px);
 }
 
+.nav-container .contents .active {
+    border-bottom: 3px solid #fff;
+}
+
+.nav-container .contents li {
+    margin-left: 3em;
+}
+
 .nav-container .contents li a {
     display: block;
-    margin-left: 3em;
+    /* margin-left: 3em; */
     padding-top: 2em;
     padding-bottom: 2em;
     font-size: 1vw;
@@ -158,7 +166,7 @@ li, ol, a {
     position: absolute;
     width: 10%;
     left: 10%;
-    gap: 1em;
+    gap: 2em;
 }
 
 .body-container .name-title .bullet-points .bullets .bullet {
@@ -176,7 +184,7 @@ li, ol, a {
 }
 
 .body-container .name-title .bullets .bullet.active {
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: black;
     background-color: #fff;
     border: none !important;
